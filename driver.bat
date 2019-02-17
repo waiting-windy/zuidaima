@@ -1,6 +1,6 @@
 @echo off  
 :Again  
-echo 自动签到中！！！
+echo 脳脭露炉脟漏碌陆脰脨拢隆拢隆拢隆
 python ./qiandao.py 
 timeout /t 14400
 goto Again 
