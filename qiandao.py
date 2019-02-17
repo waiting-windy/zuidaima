@@ -2,10 +2,10 @@ import time
 import datetime
 from selenium import webdriver
 
-username = "964879015@qq.com" #登录账号
-password = "ZXHNZYQ321."#登录密码
-message = "考研之路不孤单，加油！加油！加油！"+time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
-
+username = "***" #登录账号
+password = "***"#登录密码
+message = "***"+time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
+#签到信息，时间是防止重复
 driver = webdriver.Chrome() #模拟谷歌浏览器打开网站
 driver.get("http://www.zuidaima.com/user/login.htm")
 
