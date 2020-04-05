@@ -4,7 +4,7 @@ from selenium import webdriver
 import ins
 
 username = "964879015@qq.com" #登录账号
-password = "ZXHNZYQ321."#登录密码
+password = "******"#登录密码
 message = ins.getInstance()
 
 driver = webdriver.Chrome() #模拟谷歌浏览器打开网站
