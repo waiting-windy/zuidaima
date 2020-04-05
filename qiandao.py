@@ -1,11 +1,12 @@
 import time
 import datetime
 from selenium import webdriver
+import ins
 
-username = "***" #登录账号
-password = "***"#登录密码
-message = "***"+time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
-#签到信息，时间是防止重复
+username = "964879015@qq.com" #登录账号
+password = "ZXHNZYQ321."#登录密码
+message = ins.getInstance()
+
 driver = webdriver.Chrome() #模拟谷歌浏览器打开网站
 driver.get("http://www.zuidaima.com/user/login.htm")
 
@@ -23,7 +24,7 @@ try:
     driver.get("http://www.zuidaima.com/")
 
     #输入签到信息
-    driver.find_element_by_id("mood_input").send_keys(message)
+    driver.find_element_by_id("mood_input").send_keys(message.strip())
     time.sleep(1)
 
     #完成签到
@@ -38,3 +39,6 @@ except:
     print("签到失败")
 
 driver.quit()
+
+
+    
